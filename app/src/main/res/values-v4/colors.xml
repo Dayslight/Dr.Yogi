@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material DEFAULT colors -->
+    <color name="primary">#F05249</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="accent">#FF8F00</color>
+    <color name="window_background">#F9F9F9</color>
+    <color name="drawer_background">#F9F9F9</color>
+    <!-- Material DEFAULT text / items colors -->
+    <color name="icons">#FFF</color>
+    <!-- 87% von #000000 -> DE -->
+    <color name="counter_text_color">#DE000000</color>
+    <!-- 54% von #000000 -> 8A -->
+    <color name="secondary_text">#8A000000</color>
+    <!-- 26% von #000000 -> 42 -->
+    <color name="hint_text">#42000000</color>
+    <!-- 12% von #000000 -> 1F -->
+    <color name="divider">#e3e3e3</color>
+    <color name="white">#ffffff</color>
+    <color name="pagestripbg">#F05249</color>
+    <color name="primarytranparent">#B3F05249</color>
+
+    <color name="tabstriptxt">#ffffff</color>
+</resources>

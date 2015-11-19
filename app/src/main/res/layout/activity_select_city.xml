@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/actionbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <RelativeLayout
+                android:id="@+id/bkg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:gravity="left">
+
+
+                <ImageView
+                    android:id="@+id/backbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/inputSearch"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ic_close_grey"
+                    android:paddingTop="3dp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/inputSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/backbtn"
+                    android:layout_toRightOf="@+id/backbtn"
+                    android:gravity="left"
+                    android:hint="eg.Kathmandu"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="textPersonName"
+                    app:met_baseColor="@color/counter_text_color"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="#FFFFFF" />
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar_container"
+        android:background="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+</RelativeLayout>

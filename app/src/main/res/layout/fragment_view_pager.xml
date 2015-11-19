@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragment.ViewPagerFragment">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:text="Small Text"
+
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+            <view.ExpandableHeightGridView
+                android:id="@+id/grid_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/textView"
+                android:layout_marginTop="10dp"
+                android:numColumns="4"
+                android:paddingBottom="50dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp">
+
+            </view.ExpandableHeightGridView>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>
