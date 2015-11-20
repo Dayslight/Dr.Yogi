@@ -75,7 +75,6 @@ public class MyRecyclerViewAdapter extends RecyclerView
 
         LayoutInflater inflaterImage = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View imageView = inflaterImage.inflate(R.layout.imageitem, null);
-
         holder.imageLayout.addView(imageView);
 
 

@@ -16,4 +16,15 @@
         <item>3</item>
     </string-array>
     <string name="title_activity_catagory_detail_list">CatagoryDetailListActivity</string>
+
+
+    <item type="id" name="layout1" />
+    <item type="id" name="layout2" />
+    <item type="id" name="layout3" />
+    <item type="id" name="layout4" />
+    <item type="id" name="layout5" />
+    <item type="id" name="layout6" />
+    <item type="id" name="layout7" />
+
+
 </resources>
