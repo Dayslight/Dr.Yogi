@@ -35,6 +35,7 @@ public class CatagoryDetailActivity extends AppCompatActivity {
 
     private void setuplinearList() {
         for (int i = 0; i <= 6; i++) {
+
             LinearLayout parent = new LinearLayout(getApplicationContext());
             parent.setLayoutParams(new
                     LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
@@ -44,6 +45,7 @@ public class CatagoryDetailActivity extends AppCompatActivity {
             fm = getSupportFragmentManager();
             fm.beginTransaction().add(parent.getId(), fragment).commit();
             inflatlayout.addView(parent);
+
         }
 
     }
@@ -55,6 +57,7 @@ public class CatagoryDetailActivity extends AppCompatActivity {
                 mFragment = new ImageScrollFragment();
                 linearLayout.setId(R.id.layout1);
                 break;
+
             case 1:
                 mFragment = new ScheduleFragment();
                 linearLayout.setId(R.id.layout2);
