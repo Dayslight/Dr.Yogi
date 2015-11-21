@@ -55,6 +55,4 @@
         android:scrollbars="vertical"
         android:layout_margin="10dp"
         android:layout_below="@+id/toolbar_container" />
-
-
 </RelativeLayout>
