@@ -14,7 +14,7 @@
             android:id="@+id/actionbarlayout"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="@color/primarytranparent"
+            android:background="@color/primary"
             android:elevation="4dp"
             android:transitionName="actionBar"
             app:contentInsetEnd="0dp"
@@ -48,45 +48,57 @@
         </android.support.v7.widget.Toolbar>
     </RelativeLayout>
 
-    <ScrollView
-        android:id="@+id/scrollView2"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hsv"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="60dp"
-        android:layout_below="@+id/toolbar_container">
+        android:layout_below="@+id/toolbar_container"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
+    </android.support.v4.view.ViewPager>
+
+
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:measureAllChildren="false"
+        android:scrollbars="none"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
-            android:id="@+id/inflatlayout"
-            android:layout_width="match_parent"
+            android:id="@+id/innerLay"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
 
-        </LinearLayout>
-
-
-    </ScrollView>
+    </HorizontalScrollView>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
         android:background="@color/accent"
 
-        android:layout_alignParentStart="true">
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
 
         <com.gc.materialdesign.views.ButtonRectangle
             android:id="@+id/callbtn"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="55dp"
             android:background="@color/accent"
             android:text="CALL"
             android:textColor="#ffffff"
-
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />

@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="ALL SERVICES"
-        android:id="@+id/textView14"
+        android:id="@+id/allservicestxt"
         android:textColor="@color/blue"
         android:textSize="12sp"
         android:layout_below="@+id/serviceslist"

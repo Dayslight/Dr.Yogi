@@ -1,6 +1,7 @@
 package fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -9,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.dryogi.R;
+
+import activity.GalleryActivity;
 
 
 public class ImageGalleryFragment extends Fragment {
@@ -39,6 +42,14 @@ public class ImageGalleryFragment extends Fragment {
             LayoutInflater inflaterImage = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             View imageView = inflaterImage.inflate(R.layout.imageitem, null);
             imageLayout.addView(imageView);
+
+            imageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(getActivity(), GalleryActivity.class);
+                    startActivity(intent);
+                }
+            });
 
         }
 

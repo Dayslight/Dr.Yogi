@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="ALL DOCTORS"
-        android:id="@+id/textView14"
+        android:id="@+id/alldoctorstxt"
         android:textColor="@color/blue"
         android:textSize="12sp"
         android:layout_below="@+id/doctorlist"

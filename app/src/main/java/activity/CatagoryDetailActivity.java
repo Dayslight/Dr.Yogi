@@ -9,7 +9,9 @@ import android.widget.LinearLayout;
 import com.dryogi.R;
 
 import fragment.DoctorsFragment;
+import fragment.ExperienceFrament;
 import fragment.FeedBackFragment;
+import fragment.FeesFragment;
 import fragment.ImageGalleryFragment;
 import fragment.ImageScrollFragment;
 import fragment.LocationFragment;
@@ -35,7 +37,7 @@ public class CatagoryDetailActivity extends AppCompatActivity {
     }
 
     private void setuplinearList() {
-        for (int i = 0; i <= 7; i++) {
+        for (int i = 0; i <= 9; i++) {
 
             LinearLayout parent = new LinearLayout(getApplicationContext());
             parent.setLayoutParams(new
@@ -60,37 +62,47 @@ public class CatagoryDetailActivity extends AppCompatActivity {
                 break;
 
             case 1:
-                mFragment = new ScheduleFragment();
+                mFragment = new ExperienceFrament();
                 linearLayout.setId(R.id.layout2);
                 break;
-
             case 2:
-                mFragment = new LocationFragment();
+                mFragment = new FeesFragment();
                 linearLayout.setId(R.id.layout3);
                 break;
-
             case 3:
-                mFragment = new DoctorsFragment();
+                mFragment = new LocationFragment();
                 linearLayout.setId(R.id.layout4);
                 break;
 
             case 4:
-                mFragment = new FeedBackFragment();
+                mFragment = new ScheduleFragment();
                 linearLayout.setId(R.id.layout5);
                 break;
+
             case 5:
-                mFragment = new ServicesFragment();
+                mFragment = new ImageGalleryFragment();
                 linearLayout.setId(R.id.layout6);
                 break;
 
             case 6:
-                mFragment = new PracticesFragment();
+                mFragment = new DoctorsFragment();
                 linearLayout.setId(R.id.layout7);
                 break;
+
             case 7:
-                mFragment = new ImageGalleryFragment();
+                mFragment = new FeedBackFragment();
                 linearLayout.setId(R.id.layout8);
                 break;
+            case 8:
+                mFragment = new ServicesFragment();
+                linearLayout.setId(R.id.layout9);
+                break;
+
+            case 9:
+                mFragment = new PracticesFragment();
+                linearLayout.setId(R.id.layout10);
+                break;
+
 
         }
         return mFragment;

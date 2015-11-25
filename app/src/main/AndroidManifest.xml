@@ -63,6 +63,18 @@
         </activity>
         <activity android:name="activity.AllFeedBackActivity" >
         </activity>
+        <activity
+            android:name="activity.AllServicesActivity"
+            android:label="@string/title_activity_all_services"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name="activity.LocationActivity" >
+        </activity>
+        <activity
+            android:name="activity.GalleryActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.Toolbar" >
+        </activity>
     </application>
 
 </manifest>

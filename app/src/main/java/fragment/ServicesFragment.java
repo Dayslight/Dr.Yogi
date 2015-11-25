@@ -1,11 +1,14 @@
 package fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
+import activity.AllServicesActivity;
 import com.dryogi.R;
 
 import java.util.ArrayList;
@@ -21,6 +24,8 @@ public class ServicesFragment extends Fragment {
 
     ServicesListAdapter servicesListAdapter;
 
+    TextView allservicestxt;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -31,6 +36,19 @@ public class ServicesFragment extends Fragment {
 
 
         servicesList = (NonScrollListView) vi.findViewById(R.id.serviceslist);
+
+
+        allservicestxt = (TextView) vi.findViewById(R.id.allservicestxt);
+
+
+        allservicestxt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), AllServicesActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         arrayserviceslist.add("1");
         arrayserviceslist.add("2");
