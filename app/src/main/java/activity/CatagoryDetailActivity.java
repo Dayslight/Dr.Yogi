@@ -10,6 +10,7 @@ import com.dryogi.R;
 
 import fragment.DoctorsFragment;
 import fragment.FeedBackFragment;
+import fragment.ImageGalleryFragment;
 import fragment.ImageScrollFragment;
 import fragment.LocationFragment;
 import fragment.PracticesFragment;
@@ -34,7 +35,7 @@ public class CatagoryDetailActivity extends AppCompatActivity {
     }
 
     private void setuplinearList() {
-        for (int i = 0; i <= 6; i++) {
+        for (int i = 0; i <= 7; i++) {
 
             LinearLayout parent = new LinearLayout(getApplicationContext());
             parent.setLayoutParams(new
@@ -85,6 +86,10 @@ public class CatagoryDetailActivity extends AppCompatActivity {
             case 6:
                 mFragment = new PracticesFragment();
                 linearLayout.setId(R.id.layout7);
+                break;
+            case 7:
+                mFragment = new ImageGalleryFragment();
+                linearLayout.setId(R.id.layout8);
                 break;
 
         }

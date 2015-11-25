@@ -69,17 +69,31 @@
 
     </ScrollView>
 
-    <com.gc.materialdesign.views.ButtonRectangle
-        android:id="@+id/callbtn"
-        style="?android:attr/buttonStyleSmall"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:background="@color/accent"
-        android:text="CALL"
-        android:textColor="#ffffff"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/accent"
 
-         />
+        android:layout_alignParentStart="true">
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/callbtn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/accent"
+            android:text="CALL"
+            android:textColor="#ffffff"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+
 
 
 </RelativeLayout>
