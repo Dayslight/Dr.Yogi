@@ -1,5 +1,6 @@
 package fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -13,6 +14,8 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import activity.LocationActivity;
+
 
 public class LocationFragment extends Fragment implements OnMapReadyCallback {
 
@@ -22,6 +25,14 @@ public class LocationFragment extends Fragment implements OnMapReadyCallback {
         // Inflate the layout for this fragment
 
         View vi = inflater.inflate(R.layout.fragment_location, container, false);
+
+        vi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), LocationActivity.class);
+                startActivity(intent);
+            }
+        });
 
         MapFragment mapFragment = (MapFragment) getActivity().getFragmentManager()
                 .findFragmentById(R.id.map);
