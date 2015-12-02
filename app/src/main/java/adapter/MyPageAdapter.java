@@ -7,6 +7,8 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.dryogi.R;
 
+import fragment.AppointmentFragment;
+import fragment.ProfileFragment;
 import fragment.ViewPagerFragment;
 
 public class MyPageAdapter extends FragmentStatePagerAdapter {
@@ -21,7 +23,19 @@ public class MyPageAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        ViewPagerFragment fragment = new ViewPagerFragment();
+        Fragment fragment = null;
+
+        if (position == 0) {
+            fragment = new ViewPagerFragment();
+
+        } else if (position == 1) {
+            fragment = new ProfileFragment();
+        } else if (position == 2) {
+            fragment = new AppointmentFragment();
+
+        }
+
+
         return fragment;
     }
 

@@ -55,7 +55,6 @@
             android:name="activity.AllTimingActivity"
             android:label="@string/title_activity_all_timing"
             android:theme="@style/AppTheme.Toolbar" />
-
         <activity
             android:name="activity.AllDoctorsActivity"
             android:label="@string/title_activity_all_doctors"
@@ -63,26 +62,23 @@
         <activity
             android:name="activity.AllFeedBackActivity"
             android:theme="@style/AppTheme.Toolbar" />
-
         <activity
             android:name="activity.AllServicesActivity"
             android:label="@string/title_activity_all_services"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="activity.LocationActivity"
-            android:theme="@style/AppTheme.Toolbar">
-
-        </activity>
+            android:theme="@style/AppTheme.Toolbar"/>
         <activity
             android:name="activity.GalleryActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.Toolbar" />
-
-
         <activity
             android:name="activity.DoctorsDetailActivity"
             android:theme="@style/AppTheme.Toolbar" />
-
+        <activity
+            android:name="activity.EditProfileActivity"
+            android:theme="@style/AppTheme.Toolbar" />
     </application>
 
 </manifest>
