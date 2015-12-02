@@ -14,7 +14,6 @@ import com.rengwuxian.materialedittext.MaterialEditText;
 
 import java.util.ArrayList;
 
-import activity.FirstPageActivity;
 import adapter.CityListAdapter;
 
 public class SelectCityActivity extends Activity {
@@ -51,9 +50,15 @@ public class SelectCityActivity extends Activity {
             public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
 
 
-                Intent intent = new Intent(getApplicationContext(), FirstPageActivity.class);
-                startActivity(intent);
-                finish();
+                if (getIntent().getExtras().get("class").toString().equals("splash")) {
+
+                    Intent intent = new Intent(getApplicationContext(), FirstPageActivity.class);
+                    startActivity(intent);
+                    finish();
+                } else if (getIntent().getExtras().get("class").toString().equals("inner")) {
+
+                    finish();
+                }
 
 
             }

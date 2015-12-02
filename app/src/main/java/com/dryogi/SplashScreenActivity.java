@@ -35,6 +35,8 @@ public class SplashScreenActivity extends Activity {
 
                         Intent intent = new Intent(getApplicationContext(),
                                 SelectCityActivity.class);
+                        intent.putExtra("class", "splash");
+
                         startActivity(intent);
                         finish();
 

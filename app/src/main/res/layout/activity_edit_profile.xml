@@ -62,7 +62,7 @@
 
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/profileimg"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_alignParentLeft="true"
@@ -75,7 +75,7 @@
                 android:layout_height="match_parent"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/imageView6"
+                android:layout_below="@+id/profileimg"
                 android:fillViewport="false">
 
 
@@ -112,26 +112,13 @@
                             android:text="bjdayslight@gmail.com"
                             android:textAppearance="?android:attr/textAppearanceSmall" />
 
-                        <ImageView
-                            android:id="@+id/imageView8"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentRight="true"
-                            android:layout_alignTop="@+id/imageView7"
-                            android:layout_marginRight="10dp"
-                            android:src="@drawable/ic_launcher" />
-
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
+                            android:background="@color/divider"
+                            android:layout_alignParentBottom="true"
                             android:layout_alignLeft="@+id/textView25"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentRight="true"
-                            android:layout_alignStart="@+id/textView25"
-                            android:layout_below="@+id/imageView8"
-                            android:layout_marginTop="15dp"
-                            android:background="@color/divider">
+                            android:layout_alignStart="@+id/textView25">
 
                         </View>
 
@@ -374,7 +361,7 @@
                             />
 
                         <ImageView
-                            android:id="@+id/imageView85"
+                            android:id="@+id/editbirthimg"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_alignParentEnd="true"
@@ -390,7 +377,7 @@
                             android:layout_alignParentEnd="true"
                             android:layout_alignParentRight="true"
                             android:layout_alignStart="@+id/textView255"
-                            android:layout_below="@+id/imageView85"
+                            android:layout_below="@+id/editbirthimg"
                             android:layout_marginTop="15dp"
                             android:background="@color/divider">
 
@@ -500,7 +487,7 @@
                             android:id="@+id/textView2555"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_alignBottom="@+id/imageView855"
+                            android:layout_alignBottom="@+id/editbirthimg5"
                             android:layout_marginLeft="10dp"
                             android:layout_toEndOf="@+id/imageView755"
                             android:layout_toRightOf="@+id/imageView755"
@@ -508,7 +495,7 @@
                             android:textAppearance="?android:attr/textAppearanceSmall" />
 
                         <ImageView
-                            android:id="@+id/imageView855"
+                            android:id="@+id/editbirthimg5"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_alignParentEnd="true"
@@ -539,11 +526,11 @@
             </ScrollView>
 
             <ImageView
-                android:id="@+id/imageView10"
+                android:id="@+id/pickimageimg"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:src="@drawable/ic_launcher"
-                android:layout_alignBottom="@+id/imageView6"
+                android:layout_alignBottom="@+id/profileimg"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
                 android:layout_margin="20dp" />
