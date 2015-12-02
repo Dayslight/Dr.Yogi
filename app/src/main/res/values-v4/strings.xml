@@ -6,7 +6,7 @@
     <string name="title_activity_select_city">SelectCityActivity</string>
     <string name="title_activity_first_page">FirstPageActivity</string>
 
-<!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
@@ -15,20 +15,41 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+
+    <string-array name="allfeedbacktitle">
+        <item>Most Helpful</item>
+        <item>Recent Reviews</item>
+    </string-array>
+
+
     <string name="title_activity_catagory_detail_list">CatagoryDetailListActivity</string>
 
+    <!--for catagories item-->
 
-    <item type="id" name="layout1" />
-    <item type="id" name="layout2" />
-    <item type="id" name="layout3" />
-    <item type="id" name="layout4" />
-    <item type="id" name="layout5" />
-    <item type="id" name="layout6" />
-    <item type="id" name="layout7" />
-    <item type="id" name="layout8" />
-    <item type="id" name="layout9" />
-    <item type="id" name="layout10" />
+    <item name="layout1" type="id" />
+    <item name="layout2" type="id" />
+    <item name="layout3" type="id" />
+    <item name="layout4" type="id" />
+    <item name="layout5" type="id" />
+    <item name="layout6" type="id" />
+    <item name="layout7" type="id" />
+    <item name="layout8" type="id" />
+    <item name="layout9" type="id" />
+    <item name="layout10" type="id" />
 
+    <!--for doctor profile item-->
+
+
+    <item name="layout11" type="id" />
+    <item name="layout22" type="id" />
+    <item name="layout33" type="id" />
+    <item name="layout44" type="id" />
+    <item name="layout55" type="id" />
+    <item name="layout66" type="id" />
+    <item name="layout77" type="id" />
+    <item name="layout88" type="id" />
+    <item name="layout99" type="id" />
+    <item name="layout100" type="id" />
 
 
 </resources>

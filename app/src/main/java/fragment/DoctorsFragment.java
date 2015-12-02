@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.TextView;
 
 import com.dryogi.R;
@@ -13,6 +14,7 @@ import com.dryogi.R;
 import java.util.ArrayList;
 
 import activity.AllDoctorsActivity;
+import activity.DoctorsDetailActivity;
 import adapter.DoctorListAdapter;
 import view.NonScrollListView;
 
@@ -46,6 +48,15 @@ public class DoctorsFragment extends Fragment {
             }
         });
 
+
+        doctorlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                Intent intent = new Intent(getActivity(), DoctorsDetailActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
 

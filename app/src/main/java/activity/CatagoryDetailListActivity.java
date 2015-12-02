@@ -45,7 +45,7 @@ public class CatagoryDetailListActivity extends AppCompatActivity {
             public void onItemClick(int position, View v) {
                 Log.i(LOG_TAG, " Clicked on Item " + position);
 
-                Intent intent = new Intent(getApplicationContext(), CatagoryDetailActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ClinicDetailActivity.class);
                 startActivity(intent);
 
 

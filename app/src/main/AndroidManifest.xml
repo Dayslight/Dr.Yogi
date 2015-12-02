@@ -40,7 +40,7 @@
             android:label="@string/title_activity_catagory_detail_list"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="activity.CatagoryDetailActivity"
+            android:name="activity.ClinicDetailActivity"
             android:label="@string/title_activity_catagory_detail"
             android:theme="@style/AppTheme.NoActionBar" />
 
@@ -54,13 +54,15 @@
         <activity
             android:name="activity.AllTimingActivity"
             android:label="@string/title_activity_all_timing"
-            android:theme="@style/AppTheme.Toolbar"/>
+            android:theme="@style/AppTheme.Toolbar" />
 
         <activity
             android:name="activity.AllDoctorsActivity"
             android:label="@string/title_activity_all_doctors"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="activity.AllFeedBackActivity" />
+        <activity
+            android:name="activity.AllFeedBackActivity"
+            android:theme="@style/AppTheme.Toolbar" />
 
         <activity
             android:name="activity.AllServicesActivity"
@@ -75,6 +77,12 @@
             android:name="activity.GalleryActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.Toolbar" />
+
+
+        <activity
+            android:name="activity.DoctorsDetailActivity"
+            android:theme="@style/AppTheme.Toolbar" />
+
     </application>
 
 </manifest>
