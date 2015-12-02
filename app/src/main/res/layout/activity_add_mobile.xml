@@ -95,19 +95,19 @@
             android:layout_alignEnd="@+id/textView26"
             android:hint="Mobile number"
             android:gravity="center" />
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/callbtn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/accent"
+            android:text="CONTINUE"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
     </RelativeLayout>
 
-
-    <com.gc.materialdesign.views.ButtonRectangle
-        android:id="@+id/callbtn"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/accent"
-        android:text="CONTINUE"
-        android:textColor="#ffffff"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
