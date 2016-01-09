@@ -1,12 +1,15 @@
 package activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.LinearLayout;
 
 import com.dryogi.R;
+import com.gc.materialdesign.views.ButtonRectangle;
 
 import fragment.DoctorsFragment;
 import fragment.FeedBackFragment;
@@ -20,6 +23,8 @@ public class ClinicDetailActivity extends AppCompatActivity {
     LinearLayout inflatlayout;
     FragmentManager fm;
     Fragment fragment;
+    ButtonRectangle callbtn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +32,16 @@ public class ClinicDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_catagory_detail);
         inflatlayout = (LinearLayout) findViewById(R.id.inflatlayout);
 
-        setuplinearList();
+        callbtn = (ButtonRectangle) findViewById(R.id.callbtn);
+        callbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), CreateAccountActivity.class);
+                startActivity(intent);
+            }
+        });
 
+        setuplinearList();
 
     }
 
@@ -80,7 +93,7 @@ public class ClinicDetailActivity extends AppCompatActivity {
                 mFragment = new ServicesFragment();
                 linearLayout.setId(R.id.layout6);
                 break;
-            
+
 
         }
         return mFragment;

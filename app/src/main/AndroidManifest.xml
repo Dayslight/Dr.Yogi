@@ -82,10 +82,21 @@
         <activity
             android:name="activity.AddMobileActivity"
             android:label="@string/title_activity_add_mobile"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="activity.AppointmentDetailsActivity"
             android:theme="@style/AppTheme.Toolbar" />
+        <activity
+            android:name="activity.CreateAccountActivity"
+            android:theme="@style/AppTheme.Toolbar" />
+        <activity
+            android:name="activity.EnterContactActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CancelAppointmentActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
     </application>
 
 </manifest>

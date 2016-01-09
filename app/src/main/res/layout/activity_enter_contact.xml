@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.EnterContactActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/actionbarlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primarytranparent"
+            android:elevation="4dp"
+            android:transitionName="actionBar"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp">
+
+
+            <ImageView
+                android:id="@+id/backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/ic_arrow" />
+
+
+            <TextView
+                android:id="@+id/headtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/backbtn"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/backbtn"
+                android:layout_toRightOf="@+id/backbtn"
+                android:gravity="center"
+                android:text="Enter Contact Details"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollviewdetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/toolbar_container"
+        android:layout_alignStart="@+id/toolbar_container"
+        android:layout_below="@+id/toolbar_container">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginTop="5dp"
+                android:background="@color/drawer_background">
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageView12"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/imageView12"
+                    android:layout_toRightOf="@+id/imageView12"
+                    android:text="Dr.Divyashree Rajendra"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView37"
+                    android:layout_alignStart="@+id/textView37"
+                    android:layout_below="@+id/textView37"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+                    android:text="Smiles &apos;N&apos; More Orthodontic &amp; Dental Implant Center, Hs.."
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/imageView12"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView38"
+                    android:layout_alignStart="@+id/textView38"
+                    android:layout_alignTop="@+id/imageView13"
+                    android:layout_marginTop="15dp"
+                    android:text="Mon, January 2016 -11:30AM"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/namelayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignLeft="@+id/relativeLayout4"
+                android:layout_alignStart="@+id/relativeLayout4"
+                android:layout_below="@+id/relativeLayout4">
+
+
+                <ImageView
+                    android:id="@+id/nameimg"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/nametxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/nameimg"
+                    android:layout_toRightOf="@+id/nameimg"
+                    android:text="Bijay Bogati"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@+id/nametxt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignStart="@+id/nametxt"
+                    android:layout_below="@+id/nametxt"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/divider">
+
+                </View>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/emaillayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignEnd="@+id/namelayout"
+                android:layout_alignRight="@+id/namelayout"
+                android:layout_below="@+id/namelayout"
+                android:layout_marginLeft="10dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/imageView7"
+                    android:layout_toRightOf="@+id/imageView7"
+                    android:text="bjdayslight@gmail.com"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@+id/textView25"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/textView25"
+                    android:background="@color/divider">
+
+                </View>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/phonelayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/emaillayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp">
+
+
+                <ImageView
+                    android:id="@+id/phoneimg"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/phonetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/phoneimg"
+                    android:layout_toRightOf="@+id/phoneimg"
+                    android:text="Add Mobile Number"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/blue" />
+
+                <ImageView
+                    android:id="@+id/editphoneimg"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/phoneimg"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_launcher" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/phoneimg"
+                    android:background="@color/divider">
+
+                </View>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phonelayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Note: Booking is FREE. All fees are payable at clinic."
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView41"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:text="By Booking this appointment you agree to the"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView42"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Terms &amp; Conditions"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <RelativeLayout
+                android:id="@+id/callbtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/textView43"
+                android:background="@color/primary"
+                android:text="BOOK"
+                android:textColor="#ffffff"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="BOOK"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>
