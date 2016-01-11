@@ -1,10 +1,12 @@
 package activity;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.dryogi.CancelAppointmentActivity;
 import com.dryogi.R;
 
 public class AppointmentDetailsActivity extends AppCompatActivity {
@@ -21,7 +23,10 @@ public class AppointmentDetailsActivity extends AppCompatActivity {
         canceltxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
+
+                Intent intent = new Intent(getApplicationContext(), CancelAppointmentActivity.class);
+                startActivity(intent);
+
             }
         });
 

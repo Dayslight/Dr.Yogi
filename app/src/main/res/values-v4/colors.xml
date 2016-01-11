@@ -19,7 +19,7 @@
     <color name="divider">#e3e3e3</color>
     <color name="white">#ffffff</color>
     <color name="pagestripbg">#F05249</color>
-    <color name="primarytranparent">#B3F05249</color>
+    <color name="primarytranparent">#F05249</color>
 
     <color name="tabstriptxt">#ffffff</color>
 </resources>

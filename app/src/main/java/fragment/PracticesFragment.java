@@ -36,9 +36,10 @@ public class PracticesFragment extends Fragment {
         arraypracticeslist.add("2");
 
 
-
         practicesListAdapter = new PracticesListAdapter(getActivity(), arraypracticeslist);
         practicesList.setAdapter(practicesListAdapter);
+
+
 
 
         return vi;

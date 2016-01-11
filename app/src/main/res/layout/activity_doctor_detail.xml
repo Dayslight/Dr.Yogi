@@ -54,8 +54,8 @@
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="60dp"
-        android:layout_below="@+id/toolbar_container">
+        android:layout_below="@+id/toolbar_container"
+        android:layout_marginBottom="60dp">
 
 
         <LinearLayout
@@ -69,31 +69,59 @@
 
     </ScrollView>
 
-    <RelativeLayout
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:background="@color/accent"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
 
-        android:layout_alignParentStart="true">
 
-        <com.gc.materialdesign.views.ButtonRectangle
+        <RelativeLayout
             android:id="@+id/callbtn"
-            style="?android:attr/buttonStyleSmall"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/accent"
-            android:text="CALL"
-            android:textColor="#ffffff"
+            android:layout_height="45dp"
+            android:layout_weight="1"
 
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-    </RelativeLayout>
+            android:background="@color/primary"
+            android:layout_marginRight="1dp">
 
 
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="CALL"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/book"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/primary"
+            android:layout_marginLeft="1dp">
+
+
+            <TextView
+                android:id="@+id/booktxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="BOOK"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </LinearLayout>
 
 
 </RelativeLayout>

@@ -83,20 +83,27 @@
         android:text="1234567"
         android:gravity="center" />
 
-
-    <com.gc.materialdesign.views.ButtonRectangle
-        android:id="@+id/callbtn"
-        style="?android:attr/buttonStyleSmall"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/primary"
-        android:text="Cancel Appointment"
-        android:textColor="#ffffff"
+        android:layout_height="60dp"
         android:layout_below="@+id/editText4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp" />
+        android:background="@color/primary"
+        android:id="@+id/cancelbtn"
+        android:layout_marginRight="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Cancel Appointment"
+            android:id="@+id/textView45"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
 
 </RelativeLayout>

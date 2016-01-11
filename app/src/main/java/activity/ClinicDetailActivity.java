@@ -7,12 +7,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.dryogi.R;
-import com.gc.materialdesign.views.ButtonRectangle;
 
 import fragment.DoctorsFragment;
-import fragment.FeedBackFragment;
 import fragment.ImageScrollFragment;
 import fragment.LocationFragment;
 import fragment.ScheduleFragment;
@@ -23,7 +22,7 @@ public class ClinicDetailActivity extends AppCompatActivity {
     LinearLayout inflatlayout;
     FragmentManager fm;
     Fragment fragment;
-    ButtonRectangle callbtn;
+    RelativeLayout booklay;
 
 
     @Override
@@ -32,8 +31,8 @@ public class ClinicDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_catagory_detail);
         inflatlayout = (LinearLayout) findViewById(R.id.inflatlayout);
 
-        callbtn = (ButtonRectangle) findViewById(R.id.callbtn);
-        callbtn.setOnClickListener(new View.OnClickListener() {
+        booklay = (RelativeLayout)findViewById(R.id.book);
+        booklay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), CreateAccountActivity.class);
@@ -46,7 +45,7 @@ public class ClinicDetailActivity extends AppCompatActivity {
     }
 
     private void setuplinearList() {
-        for (int i = 0; i <= 5; i++) {
+        for (int i = 0; i <= 4; i++) {
 
             LinearLayout parent = new LinearLayout(getApplicationContext());
             parent.setLayoutParams(new
@@ -85,11 +84,11 @@ public class ClinicDetailActivity extends AppCompatActivity {
                 linearLayout.setId(R.id.layout4);
                 break;
 
+//            case 4:
+//                mFragment = new FeedBackFragment();
+//                linearLayout.setId(R.id.layout5);
+//                break;
             case 4:
-                mFragment = new FeedBackFragment();
-                linearLayout.setId(R.id.layout5);
-                break;
-            case 5:
                 mFragment = new ServicesFragment();
                 linearLayout.setId(R.id.layout6);
                 break;

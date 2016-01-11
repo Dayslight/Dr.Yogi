@@ -13,16 +13,12 @@ public class TimePageAdapter extends FragmentStatePagerAdapter {
 
     public TimePageAdapter(FragmentManager fm, Context context) {
         super(fm);
-
         this.mcontext = context;
     }
 
     @Override
     public Fragment getItem(int position) {
-
-
         return new TimeShotFragment();
-
     }
 
     @Override
@@ -32,8 +28,6 @@ public class TimePageAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-
-
         return "";
     }
 }

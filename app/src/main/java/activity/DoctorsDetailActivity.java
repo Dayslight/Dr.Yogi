@@ -1,17 +1,18 @@
 package activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.dryogi.R;
 
 import fragment.DoctorActionBarFragment;
-import fragment.DoctorsFragment;
 import fragment.ExperienceFrament;
-import fragment.FeedBackFragment;
 import fragment.FeesFragment;
 import fragment.ImageGalleryFragment;
 import fragment.LocationFragment;
@@ -24,12 +25,25 @@ public class DoctorsDetailActivity extends AppCompatActivity {
     LinearLayout inflatlayout;
     FragmentManager fm;
     Fragment fragment;
+    RelativeLayout booklay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_detail);
         inflatlayout = (LinearLayout) findViewById(R.id.inflatlayout);
+        booklay = (RelativeLayout)findViewById(R.id.book);
+
+
+
+        booklay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),CreateAccountActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         setuplinearList();
 
@@ -37,7 +51,7 @@ public class DoctorsDetailActivity extends AppCompatActivity {
     }
 
     private void setuplinearList() {
-        for (int i = 0; i <= 9; i++) {
+        for (int i = 0; i <= 7; i++) {
 
             LinearLayout parent = new LinearLayout(getApplicationContext());
             parent.setLayoutParams(new
@@ -84,21 +98,21 @@ public class DoctorsDetailActivity extends AppCompatActivity {
                 linearLayout.setId(R.id.layout66);
                 break;
 
-            case 6:
-                mFragment = new DoctorsFragment();
-                linearLayout.setId(R.id.layout77);
-                break;
+//            case 6:
+//                mFragment = new DoctorsFragment();
+//                linearLayout.setId(R.id.layout77);
+//                break;
 
-            case 7:
-                mFragment = new FeedBackFragment();
-                linearLayout.setId(R.id.layout88);
-                break;
-            case 8:
+//            case 7:
+//                mFragment = new FeedBackFragment();
+//                linearLayout.setId(R.id.layout88);
+//                break;
+            case 6:
                 mFragment = new ServicesFragment();
                 linearLayout.setId(R.id.layout99);
                 break;
 
-            case 9:
+            case 7:
                 mFragment = new PracticesFragment();
                 linearLayout.setId(R.id.layout100);
                 break;

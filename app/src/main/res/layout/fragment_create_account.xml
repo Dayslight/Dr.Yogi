@@ -51,7 +51,7 @@
     <RelativeLayout
         android:id="@+id/relativeLayout5"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:background="@color/white"
@@ -59,34 +59,40 @@
         android:layout_below="@+id/relativeLayout4">
 
         <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/backdatebtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/ic_arrow" />
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_arrow_left" />
 
         <TextView
-            android:id="@+id/textView39"
+            android:id="@+id/datetxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:text="SUN, 23 Dec"
+            android:gravity="center"
+            android:textStyle="bold"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/nextdatebtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignTop="@+id/imageButton"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/ic_arrow" />
+            android:layout_alignTop="@+id/backdatebtn"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_action_arrow_right" />
     </RelativeLayout>
 
     <view.MyViewPager
@@ -97,5 +103,5 @@
         android:layout_alignParentStart="true"
         android:background="@color/white"
         android:layout_below="@+id/relativeLayout5"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="5dp" />
 </RelativeLayout>

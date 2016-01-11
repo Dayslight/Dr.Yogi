@@ -313,12 +313,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_below="@+id/textView43"
-                android:background="@color/primary"
-                android:text="BOOK"
-                android:textColor="#ffffff"
                 android:layout_marginTop="15dp"
+                android:background="@color/primary"
                 android:gravity="center"
-                >
+                android:text="BOOK"
+                android:textColor="#ffffff">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -326,9 +325,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="5dp"
                     android:text="BOOK"
-                    android:textColor="@color/white"
-                    android:textAppearance="?android:attr/textAppearanceSmall" />
-
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white" />
 
 
             </RelativeLayout>
@@ -336,9 +334,6 @@
 
         </RelativeLayout>
     </ScrollView>
-
-
-
 
 
 </RelativeLayout>

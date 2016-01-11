@@ -45,7 +45,7 @@
                 android:layout_toEndOf="@+id/backbtn"
                 android:layout_toRightOf="@+id/backbtn"
                 android:gravity="center"
-                android:text="Small Text"
+                android:text="Select a time slot"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="#ffffff" />
 

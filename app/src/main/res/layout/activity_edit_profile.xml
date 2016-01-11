@@ -93,13 +93,13 @@
 
                         <ImageView
                             android:id="@+id/imageView7"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_centerVertical="true"
                             android:layout_margin="10dp"
-                            android:src="@drawable/ic_launcher" />
+                            android:src="@drawable/ic_action_mail" />
 
                         <TextView
                             android:id="@+id/textView25"
@@ -135,13 +135,13 @@
 
                         <ImageView
                             android:id="@+id/phoneimg"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_centerVertical="true"
                             android:layout_margin="10dp"
-                            android:src="@drawable/ic_launcher" />
+                            android:src="@drawable/ic_action_phone_start" />
 
                         <TextView
                             android:id="@+id/phonetxt"
@@ -157,13 +157,13 @@
 
                         <ImageView
                             android:id="@+id/editphoneimg"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_alignParentEnd="true"
                             android:layout_alignParentRight="true"
                             android:layout_alignTop="@+id/phoneimg"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/ic_launcher" />
+                            android:src="@drawable/ic_action_edit" />
 
                         <View
                             android:layout_width="match_parent"
@@ -188,13 +188,13 @@
 
                         <ImageView
                             android:id="@+id/nameimg"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_centerVertical="true"
                             android:layout_margin="10dp"
-                            android:src="@drawable/ic_launcher" />
+                            android:src="@drawable/ic_action_user" />
 
                         <TextView
                             android:id="@+id/nametxt"
@@ -235,13 +235,13 @@
 
                         <ImageView
                             android:id="@+id/bloodimg"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_centerVertical="true"
                             android:layout_margin="10dp"
-                            android:src="@drawable/ic_launcher" />
+                            android:src="@drawable/ic_action_blob" />
 
                         <TextView
                             android:id="@+id/bloodtxt"
@@ -396,13 +396,13 @@
 
                         <ImageView
                             android:id="@+id/locationimg"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_centerVertical="true"
                             android:layout_margin="10dp"
-                            android:src="@drawable/ic_launcher" />
+                            android:src="@drawable/ic_action_location" />
 
                         <TextView
                             android:id="@+id/txtlocation"
@@ -475,13 +475,13 @@
 
                         <ImageView
                             android:id="@+id/imageView755"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_centerVertical="true"
                             android:layout_margin="10dp"
-                            android:src="@drawable/ic_launcher" />
+                            android:src="@drawable/ic_action_alarm" />
 
                         <TextView
                             android:id="@+id/textView2555"
@@ -496,13 +496,13 @@
 
                         <ImageView
                             android:id="@+id/editbirthimg5"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_alignParentEnd="true"
                             android:layout_alignParentRight="true"
                             android:layout_alignTop="@+id/imageView755"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/ic_launcher" />
+                            android:src="@drawable/ic_action_edit" />
 
                         <View
                             android:id="@+id/view2"
@@ -527,9 +527,9 @@
 
             <ImageView
                 android:id="@+id/pickimageimg"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_edit"
                 android:layout_alignBottom="@+id/profileimg"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"

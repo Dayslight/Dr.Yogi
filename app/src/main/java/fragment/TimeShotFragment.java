@@ -50,10 +50,9 @@ public class TimeShotFragment extends Fragment implements
 
 
     public void setGroupData() {
-        groupItem.add("TechNology");
-        groupItem.add("Mobile");
-        groupItem.add("Manufacturer");
-        groupItem.add("Extras");
+        groupItem.add("Morning before 12pm");
+        groupItem.add("Afternoon 12 - 4pm");
+        groupItem.add("Evening 4 - 8pm");
     }
 
     ArrayList<String> groupItem = new ArrayList<String>();
@@ -64,39 +63,29 @@ public class TimeShotFragment extends Fragment implements
          * Add Data For TecthNology
          */
         ArrayList<String> child = new ArrayList<String>();
-        child.add("Java");
-        child.add("Drupal");
-        child.add(".Net Framework");
-        child.add("PHP");
+        child.add("10:00 PM - 10:45PM");
+        child.add("11:00 PM - 11:45PM");
         childItem.add(child);
 
         /**
          * Add Data For Mobile
          */
         child = new ArrayList<String>();
-        child.add("Android");
-        child.add("Window Mobile");
-        child.add("iPHone");
-        child.add("Blackberry");
+        child.add("12:00 PM - 12:45PM");
+        child.add("01:00 PM - 01:45PM");
+        child.add("02:00 PM - 02:45PM");
+        child.add("03:00 PM - 03:45PM");
         childItem.add(child);
         /**
          * Add Data For Manufacture
          */
         child = new ArrayList<String>();
-        child.add("HTC");
-        child.add("Apple");
-        child.add("Samsung");
-        child.add("Nokia");
+        child.add("04:00 PM - 04:45PM");
+        child.add("05:00 PM - 05:45PM");
+        child.add("06:00 PM - 06:45PM");
+        child.add("07:00 PM - 07:45PM");
         childItem.add(child);
-        /**
-         * Add Data For Extras
-         */
-        child = new ArrayList<String>();
-        child.add("Contact Us");
-        child.add("About Us");
-        child.add("Location");
-        child.add("Root Cause");
-        childItem.add(child);
+
     }
 
     @Override
