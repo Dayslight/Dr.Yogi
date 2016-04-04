@@ -66,7 +66,6 @@
                 android:id="@+id/relativeLayout4"
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
-                android:layout_marginLeft="10dp"
 
                 android:layout_marginTop="5dp"
                 android:background="@color/drawer_background">
@@ -79,7 +78,8 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/ic_launcher" />
+                    android:src="@drawable/ic_launcher"
+                    android:layout_marginLeft="10dp" />
 
                 <TextView
                     android:id="@+id/textView37"
@@ -112,8 +112,9 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/imageView12"
-                    android:layout_marginTop="5dp"
-                    android:src="@drawable/ic_launcher" />
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_action_clock" />
 
                 <TextView
                     android:id="@+id/textView40"
@@ -122,9 +123,19 @@
                     android:layout_alignLeft="@+id/textView38"
                     android:layout_alignStart="@+id/textView38"
                     android:layout_alignTop="@+id/imageView13"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="5dp"
                     android:text="Mon, January 2016 -11:30AM"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                </View>
             </RelativeLayout>
 
 
@@ -139,13 +150,13 @@
 
                 <ImageView
                     android:id="@+id/nameimg"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:layout_margin="10dp"
-                    android:src="@drawable/ic_launcher" />
+                    android:src="@drawable/ic_action_user" />
 
                 <TextView
                     android:id="@+id/nametxt"
@@ -187,19 +198,18 @@
                 android:layout_height="60dp"
                 android:layout_alignEnd="@+id/namelayout"
                 android:layout_alignRight="@+id/namelayout"
-                android:layout_below="@+id/namelayout"
-                android:layout_marginLeft="10dp">
+                android:layout_below="@+id/namelayout">
 
 
                 <ImageView
                     android:id="@+id/imageView7"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:layout_margin="10dp"
-                    android:src="@drawable/ic_launcher" />
+                    android:src="@drawable/ic_action_mail" />
 
                 <TextView
                     android:id="@+id/textView25"
@@ -229,19 +239,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_below="@id/emaillayout"
-                android:layout_marginLeft="10dp"
                 android:layout_marginTop="5dp">
 
 
                 <ImageView
                     android:id="@+id/phoneimg"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:layout_margin="10dp"
-                    android:src="@drawable/ic_launcher" />
+                    android:src="@drawable/ic_action_phone_start" />
 
                 <TextView
                     android:id="@+id/phonetxt"
@@ -251,27 +260,18 @@
                     android:layout_marginLeft="5dp"
                     android:layout_toEndOf="@+id/phoneimg"
                     android:layout_toRightOf="@+id/phoneimg"
-                    android:text="Add Mobile Number"
+                    android:text="+977-9801169421"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:textColor="@color/blue" />
 
-                <ImageView
-                    android:id="@+id/editphoneimg"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignTop="@+id/phoneimg"
-                    android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_launcher" />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
+                    android:background="@color/divider"
                     android:layout_below="@+id/phoneimg"
-                    android:background="@color/divider">
+                    android:layout_toRightOf="@+id/phoneimg"
+                    android:layout_toEndOf="@+id/phoneimg">
 
                 </View>
 
@@ -308,32 +308,33 @@
                 android:text="Terms &amp; Conditions"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
-            <RelativeLayout
-                android:id="@+id/callbtn"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_below="@+id/textView43"
-                android:layout_marginTop="15dp"
-                android:background="@color/primary"
-                android:gravity="center"
-                android:text="BOOK"
-                android:textColor="#ffffff">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="5dp"
-                    android:text="BOOK"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textColor="@color/white" />
-
-
-            </RelativeLayout>
-
 
         </RelativeLayout>
     </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/callbtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/primary"
+        android:gravity="center"
+        android:text="BOOK"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="BOOK"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
 
 
 </RelativeLayout>

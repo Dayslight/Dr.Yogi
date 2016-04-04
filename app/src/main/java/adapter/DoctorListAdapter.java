@@ -27,7 +27,6 @@ public class DoctorListAdapter extends BaseAdapter {
         inflater = (LayoutInflater) activity_context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-
     }
 
     public int getCount() {

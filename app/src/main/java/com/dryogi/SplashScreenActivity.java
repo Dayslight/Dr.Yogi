@@ -7,8 +7,6 @@ import android.os.Handler;
 import android.view.Window;
 import android.view.WindowManager;
 
-import activity.SelectCityActivity;
-
 public class SplashScreenActivity extends Activity {
 
     int milliseconds;
@@ -33,12 +31,12 @@ public class SplashScreenActivity extends Activity {
                     public void run() {
                         // check for update while user open app
 
-                        Intent intent = new Intent(getApplicationContext(),
-                                SelectCityActivity.class);
-                        intent.putExtra("class", "splash");
+                        //>>
 
+                        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                         startActivity(intent);
                         finish();
+
 
                         // Data not loaded yet
                         //Try one more time

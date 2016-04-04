@@ -12,6 +12,8 @@ public class EnterContactActivity extends AppCompatActivity {
 
     RelativeLayout callbtn;
 
+    // Add reason for appointment
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
