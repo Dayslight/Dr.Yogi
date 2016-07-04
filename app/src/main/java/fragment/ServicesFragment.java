@@ -8,11 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import activity.AllServicesActivity;
 import com.dryogi.R;
 
 import java.util.ArrayList;
 
+import activity.AllServicesActivity;
 import adapter.ServicesListAdapter;
 import view.NonScrollListView;
 
